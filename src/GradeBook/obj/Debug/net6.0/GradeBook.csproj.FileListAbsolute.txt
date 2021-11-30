@@ -1,0 +1,15 @@
+/home/giftxxvi/gradebook/src/GradeBook/bin/Debug/net6.0/GradeBook
+/home/giftxxvi/gradebook/src/GradeBook/bin/Debug/net6.0/GradeBook.deps.json
+/home/giftxxvi/gradebook/src/GradeBook/bin/Debug/net6.0/GradeBook.runtimeconfig.json
+/home/giftxxvi/gradebook/src/GradeBook/bin/Debug/net6.0/GradeBook.dll
+/home/giftxxvi/gradebook/src/GradeBook/bin/Debug/net6.0/ref/GradeBook.dll
+/home/giftxxvi/gradebook/src/GradeBook/bin/Debug/net6.0/GradeBook.pdb
+/home/giftxxvi/gradebook/src/GradeBook/obj/Debug/net6.0/GradeBook.csproj.AssemblyReference.cache
+/home/giftxxvi/gradebook/src/GradeBook/obj/Debug/net6.0/GradeBook.GeneratedMSBuildEditorConfig.editorconfig
+/home/giftxxvi/gradebook/src/GradeBook/obj/Debug/net6.0/GradeBook.AssemblyInfoInputs.cache
+/home/giftxxvi/gradebook/src/GradeBook/obj/Debug/net6.0/GradeBook.AssemblyInfo.cs
+/home/giftxxvi/gradebook/src/GradeBook/obj/Debug/net6.0/GradeBook.csproj.CoreCompileInputs.cache
+/home/giftxxvi/gradebook/src/GradeBook/obj/Debug/net6.0/GradeBook.dll
+/home/giftxxvi/gradebook/src/GradeBook/obj/Debug/net6.0/ref/GradeBook.dll
+/home/giftxxvi/gradebook/src/GradeBook/obj/Debug/net6.0/GradeBook.pdb
+/home/giftxxvi/gradebook/src/GradeBook/obj/Debug/net6.0/GradeBook.genruntimeconfig.cache
