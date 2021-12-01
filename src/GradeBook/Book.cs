@@ -1,20 +1,39 @@
 using System;
-namespace GradeBook{
-    class Book{
-        List<double> grades;
+namespace GradeBook
+{
+    class Book
+    {
+        private List<double> grades;
+        private string name;
 
-        public Book(){
+        public Book(string in_name)
+        {
             grades = new List<double>();
+            this.name = in_name;
         }
-        public Boolean AddGrades(List<double> in_grades){
-            grades = in_grades;
+
+        public Boolean SetName(string in_name)
+        {
+            this.name = in_name;
             return true;
         }
-        public Boolean AddGrade(double grade){
-            grades.Add(grade);
+
+        public string GetName()
+        {
+            return this.name;
+        }
+        public Boolean AddGrades(List<double> in_grades)
+        {
+            this.grades = in_grades;
             return true;
         }
-        public double CalculateAverage(){
+        public Boolean AddGrade(double grade)
+        {
+            this.grades.Add(grade);
+            return true;
+        }
+        public double CalculateAverage()
+        {
             double result = 0.0;
             foreach (double grade in this.grades)
             {
