@@ -1,7 +1,11 @@
 using System;
 namespace GradeBook{
     class Book{
-        List<double> grades = new List<double>();
+        List<double> grades;
+
+        public Book(){
+            grades = new List<double>();
+        }
         public Boolean AddGrades(List<double> in_grades){
             grades = in_grades;
             return true;
