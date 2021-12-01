@@ -12,11 +12,11 @@ namespace GradeBook{
         }
         public double CalculateAverage(){
             double result = 0.0;
-            foreach (double grade in grades)
+            foreach (double grade in this.grades)
             {
                 result += grade;
             }
-            return 0;
+            return result;
         }
     }
 }
