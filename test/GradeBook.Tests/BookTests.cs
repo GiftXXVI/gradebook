@@ -15,17 +15,17 @@ public class BookTests
         book.AddGrade(77.3);
 
         //act - perform computations
-        float calc_min = book.MinGrade();
-        float calc_max = book.MaxGrade();
-        float calc_sum = book.SumGrades();
+        double calc_min = book.MinGrade();
+        double calc_max = book.MaxGrade();
+        double calc_sum = book.SumGrades();
         int calc_cnt = book.CountGrades();
-        float calc_avg = book.CalculateAverage();
+        double calc_avg = book.CalculateAverage();
 
-        float expect_min = 77.3;
-        float expect_max = 90.5;
-        float expect_sum = 90.5 + 89.1 + 77.3;
+        double expect_min = 77.3;
+        double expect_max = 90.5;
+        double expect_sum = 90.5 + 89.1 + 77.3;
         int expect_cnt = 3;
-        float expect_avg = expect_sum / expect_cnt;
+        double expect_avg = expect_sum / expect_cnt;
 
         //assert - assert results
         Assert.Equals(expect_min, calc_min);
