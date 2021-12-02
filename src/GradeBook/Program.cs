@@ -6,7 +6,7 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            Book book = new Book("The Academy");
+            InMemoryBook book = new InMemoryBook("The Academy");
             List<double> grades = GetGrades();
             book.AddGrades(grades);
             book.ShowStatistics();

@@ -5,7 +5,7 @@ namespace GradeBook.Tests;
 
 public class BookTests
 {
-    Book book;
+    InMemoryBook book;
     double expected_sum;
     double expected_min;
     double expected_max;
@@ -14,7 +14,7 @@ public class BookTests
     double[] grades;
     public BookTests()
     {
-        this.book = new Book("Cloud College");
+        this.book = new InMemoryBook("Cloud College");
         grades = new double[] { 89.1, 90.5, 77.3 };
         this.expected_min = double.MaxValue;
         this.expected_max = double.MinValue;
@@ -39,28 +39,28 @@ public class BookTests
     [Fact]
     public void TestMinimum()
     {
-        double calc_min = book.MinGrade();
+        double calc_min = book.CalculateMin();
         Assert.Equal(this.expected_min, calc_min, 1);
     }
 
     [Fact]
     public void TestMaximum()
     {
-        double calc_max = book.MaxGrade();
+        double calc_max = book.CalculateMax();
         Assert.Equal(this.expected_max, calc_max, 1);
     }
 
     [Fact]
     public void TestSum()
     {
-        double calc_sum = book.SumGrades();
+        double calc_sum = book.CalculateSum();
         Assert.Equal(this.expected_sum, calc_sum, 1);
     }
 
     [Fact]
     public void TestCount()
     {
-        int calc_cnt = book.CountGrades();
+        int calc_cnt = book.CalculateCount();
         Assert.Equal(this.expected_cnt, calc_cnt);
     }
 
