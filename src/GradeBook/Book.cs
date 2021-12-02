@@ -1,12 +1,11 @@
 using System;
 namespace GradeBook
 {
-    public class Book
+    public class Book : NamedObject
     {
         private List<double> grades;
-        private string name;
 
-        public Book(string in_name)
+        public Book(string in_name) : base(in_name)
         {
             grades = new List<double>();
             this.name = in_name;
