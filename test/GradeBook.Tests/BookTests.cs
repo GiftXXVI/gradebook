@@ -28,10 +28,10 @@ public class BookTests
         double expect_avg = expect_sum / expect_cnt;
 
         //assert - assert results
-        Assert.Equal(expect_min, calc_min);
-        Assert.Equal(expect_max, calc_max);
-        Assert.Equal(expect_sum, calc_sum);
+        Assert.Equal(expect_min, calc_min, 1);
+        Assert.Equal(expect_max, calc_max, 1);
+        Assert.Equal(expect_sum, calc_sum, 1);
         Assert.Equal(expect_cnt, calc_cnt);
-        Assert.Equal(expect_avg, calc_avg);
+        Assert.Equal(expect_avg, calc_avg, 1);
     }
 }
