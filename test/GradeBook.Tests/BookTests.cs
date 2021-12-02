@@ -5,7 +5,7 @@ namespace GradeBook.Tests;
 
 public class BookTests
 {
-    InMemoryBook book;
+    Book book;
     double expected_sum;
     double expected_min;
     double expected_max;
