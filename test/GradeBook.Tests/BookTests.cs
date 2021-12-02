@@ -5,33 +5,69 @@ namespace GradeBook.Tests;
 
 public class BookTests
 {
-    [Fact]
-    public void StatsTest()
+    Book book;
+    double expected_sum;
+    double expected_min;
+    double expected_max;
+    int expected_cnt;
+    double expected_avg;
+    double[] grades;
+    public BookTests()
     {
-        //arrange - set vars
-        Book book = new Book("Cloud College");
-        book.AddGrade(89.1);
-        book.AddGrade(90.5);
-        book.AddGrade(77.3);
+        this.book = new Book("Cloud College");
+        grades = new double[] { 89.1, 90.5, 77.3 };
+        this.expected_min = double.MaxValue;
+        this.expected_max = double.MinValue;
+        this.expected_cnt = 0;
+        foreach (double grade in grades)
+        {
+            this.book.AddGrade(grade);
+            this.expected_sum += grade;
+            this.expected_cnt++;
+            if (grade < this.expected_min)
+            {
+                this.expected_min = grade;
+            }
+            if (grade > this.expected_max)
+            {
+                this.expected_max = grade;
+            }
+        }
+        this.expected_avg = this.expected_sum / this.expected_cnt;
+    }
 
-        //act - perform computations
+    [Fact]
+    public void TestMinimum()
+    {
         double calc_min = book.MinGrade();
+        Assert.Equal(this.expected_min, calc_min, 1);
+    }
+
+    [Fact]
+    public void TestMaximum()
+    {
         double calc_max = book.MaxGrade();
+        Assert.Equal(this.expected_max, calc_max, 1);
+    }
+
+    [Fact]
+    public void TestSum()
+    {
         double calc_sum = book.SumGrades();
+        Assert.Equal(this.expected_sum, calc_sum, 1);
+    }
+
+    [Fact]
+    public void TestCount()
+    {
         int calc_cnt = book.CountGrades();
+        Assert.Equal(this.expected_cnt, calc_cnt);
+    }
+
+    [Fact]
+    public void TestAvg()
+    {
         double calc_avg = book.CalculateAverage();
-
-        double expect_min = 77.3;
-        double expect_max = 90.5;
-        double expect_sum = 90.5 + 89.1 + 77.3;
-        int expect_cnt = 3;
-        double expect_avg = expect_sum / expect_cnt;
-
-        //assert - assert results
-        Assert.Equal(expect_min, calc_min, 1);
-        Assert.Equal(expect_max, calc_max, 1);
-        Assert.Equal(expect_sum, calc_sum, 1);
-        Assert.Equal(expect_cnt, calc_cnt);
-        Assert.Equal(expect_avg, calc_avg, 1);
+        Assert.Equal(this.expected_avg, calc_avg, 1);
     }
 }
