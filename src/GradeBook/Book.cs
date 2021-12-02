@@ -35,9 +35,41 @@ namespace GradeBook
         public double CalculateAverage()
         {
             double result = 0.0;
+            result = this.SumGrades() / this.CountGrades();
+            return result;
+        }
+
+        public int CountGrades()
+        {
+            return this.grades.Count();
+        }
+
+        public double SumGrades()
+        {
+            double result = 0.0;
             foreach (double grade in this.grades)
             {
                 result += grade;
+            }
+            return result;
+        }
+
+        public double MaxGrade()
+        {
+            double result = double.MinValue;
+            foreach (double grade in this.grades)
+            {
+                if (grade > result) result = grade;
+            }
+            return result;
+        }
+
+        public double MinGrade()
+        {
+            double result = double.MaxValue;
+            foreach (double grade in this.grades)
+            {
+                if (grade < result) result = grade;
             }
             return result;
         }
