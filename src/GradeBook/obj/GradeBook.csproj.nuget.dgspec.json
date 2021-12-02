@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/giftxxvi/gradebook/src/GradeBook/GradeBook.csproj": {}
+    "C:\\Users\\chimphonda\\repos\\gradebook-clone\\gradebook\\src\\GradeBook\\GradeBook.csproj": {}
   },
   "projects": {
-    "/home/giftxxvi/gradebook/src/GradeBook/GradeBook.csproj": {
+    "C:\\Users\\chimphonda\\repos\\gradebook-clone\\gradebook\\src\\GradeBook\\GradeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/giftxxvi/gradebook/src/GradeBook/GradeBook.csproj",
+        "projectUniqueName": "C:\\Users\\chimphonda\\repos\\gradebook-clone\\gradebook\\src\\GradeBook\\GradeBook.csproj",
         "projectName": "GradeBook",
-        "projectPath": "/home/giftxxvi/gradebook/src/GradeBook/GradeBook.csproj",
-        "packagesPath": "/home/giftxxvi/.nuget/packages/",
-        "outputPath": "/home/giftxxvi/gradebook/src/GradeBook/obj/",
+        "projectPath": "C:\\Users\\chimphonda\\repos\\gradebook-clone\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+        "packagesPath": "C:\\Users\\chimphonda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chimphonda\\repos\\gradebook-clone\\gradebook\\src\\GradeBook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/giftxxvi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\chimphonda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
