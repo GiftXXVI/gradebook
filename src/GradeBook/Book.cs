@@ -73,5 +73,12 @@ namespace GradeBook
             }
             return result;
         }
+
+        public void ShowStatistics(){
+            Console.WriteLine($"The sum for {this.GetName()} is {this.SumGrades():N2}");
+            Console.WriteLine($"The minimum for {this.GetName()} is {this.MinGrade():N2}");
+            Console.WriteLine($"The maximum for {this.GetName()} is {this.MaxGrade():N2}");
+            Console.WriteLine($"The average for {this.GetName()} is {this.CalculateAverage():N2}");
+        }
     }
 }
