@@ -29,7 +29,10 @@ namespace GradeBook
         }
         public Boolean AddGrade(double grade)
         {
-            this.grades.Add(grade);
+            if (grade >= 0 && grade <= 100)
+            {
+                this.grades.Add(grade);
+            }
             return true;
         }
         public double CalculateAverage()
@@ -74,7 +77,8 @@ namespace GradeBook
             return result;
         }
 
-        public void ShowStatistics(){
+        public void ShowStatistics()
+        {
             Console.WriteLine($"The sum for {this.GetName()} is {this.SumGrades():N2}");
             Console.WriteLine($"The minimum for {this.GetName()} is {this.MinGrade():N2}");
             Console.WriteLine($"The maximum for {this.GetName()} is {this.MaxGrade():N2}");
